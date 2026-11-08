@@ -16,3 +16,9 @@ Public agent skills for Latent Byte apps, listed on skills.sh. Source apps live 
 - `bunx skills add . --list`: confirms the skills CLI discovers each skill.
 
 Run public prose (README, descriptions) through the `humanize` skill before publishing.
+
+## Hermes plugins
+
+- `plugins/<name>/` holds Hermes Agent portable packages (`plugin.json`, `mcp.json`, `skills/`, `README.md`), configuration only.
+- The Hermes catalog pins an exact commit (`plugin-catalog/<name>.yaml` in `NousResearch/hermes-agent`, with `subdir: plugins/<name>`). A change here reaches Hermes users only through a new SHA-bump PR there; bump `version` in `plugin.json` and the entry together.
+- Validate with `hermes plugins validate plugins/<name>` (Hermes installs editable from a clone: `uv sync --python 3.14 --extra mcp`, `HERMES_HOME` pointed at a temp dir).

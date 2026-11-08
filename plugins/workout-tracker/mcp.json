@@ -1,0 +1,12 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "workout-tracker": {
+      "type": "streamable-http",
+      "url": "https://workout.lbyte.app/mcp",
+      "headers": {
+        "Authorization": "Bearer ${WORKOUT_TRACKER_TOKEN}"
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "workout-tracker",
+  "version": "1.0.0",
+  "description": "Plan gym workouts with Workout Tracker's hosted MCP server: search a rated exercise catalog, check a plan's weekly sets per muscle, and save plans to your account.",
+  "author": {
+    "name": "Latent Byte",
+    "url": "https://latentbyte.com"
+  },
+  "homepage": "https://workout.lbyte.app",
+  "repository": "https://github.com/latentbyte/skills",
+  "license": "MIT",
+  "keywords": ["fitness", "workout", "gym", "training", "mcp"],
+  "extensions": {
+    "com.nousresearch.hermes": {
+      "servers": {
+        "workout-tracker": {
+          "trust": "untrusted"
+        }
+      }
+    }
+  }
+}

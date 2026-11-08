@@ -19,3 +19,7 @@ Use `--skill '*'` for all of them, or `--list` to see what is available.
 ## How the skills stay current
 
 Each skill is short: a description that tells the agent when to use it, plus a pointer to the app's `llms.txt`. The app serves `llms.txt` itself, so API changes reach agents as soon as the app deploys, with no update to this repo or reinstall.
+
+## Hermes Agent
+
+[`plugins/workout-tracker`](plugins/workout-tracker) is a Hermes Agent plugin that connects Workout Tracker's hosted MCP server. Install it with `hermes plugins install workout-tracker` once it is listed in the Hermes plugin catalog.
