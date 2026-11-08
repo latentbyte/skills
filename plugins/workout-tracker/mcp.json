@@ -3,7 +3,11 @@
   "mcpServers": {
     "workout-tracker": {
       "type": "streamable-http",
-      "url": "https://workout.lbyte.app/mcp",
+      "url": "https://workout.lbyte.app/mcp/public"
+    },
+    "workout-tracker-account": {
+      "type": "streamable-http",
+      "url": "https://workout.lbyte.app/mcp/account",
       "headers": {
         "Authorization": "Bearer ${WORKOUT_TRACKER_TOKEN}"
       }

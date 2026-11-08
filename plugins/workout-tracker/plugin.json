@@ -16,6 +16,9 @@
       "servers": {
         "workout-tracker": {
           "trust": "untrusted"
+        },
+        "workout-tracker-account": {
+          "trust": "untrusted"
         }
       }
     }
